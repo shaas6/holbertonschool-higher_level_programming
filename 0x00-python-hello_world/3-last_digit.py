@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
+number = int(number)
 number_string = str(number)
 z = number_string[-1]
 x = int(z)

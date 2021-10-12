@@ -1,0 +1,32 @@
+#5-text_indentation.txt
+Testing "text_indentation"
+=============================
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_indentation("Example.String?")
+	Example.
+	<BLANKLINE>
+	String?
+	<BLANKLINE>
+	>>> text_indentation("Example:String.")
+	Example.
+	<BLANKLINE>
+	String.
+	<BLANKLINE>
+	>>> x = "Example.String"
+	>>> text_indentation(x)
+	Example.
+	<BLANKLINE>
+	String
+	>>> print(x)
+	Example.String
+	>>> text_indentation("Example..?")
+	Example.
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	>>> text_indentation(5)
+	Traceback (most recent call last):
+	TypeError: text must be a string
